@@ -1,0 +1,21 @@
+<view class="page">
+    <view class="page__bd">
+        <mp-cells wx:if="{{!userInfo}}">
+            <mp-cell value="点击登录账户" bindtap="openConfirm">
+                <image slot="icon" src="/image/icon/people.png" style="margin-right: 16px;vertical-align: middle;width:30px; height: 30px;"></image>
+            </mp-cell>
+        </mp-cells>
+        <view wx:if="{{userInfo}}" class="weui-panel weui-panel_access">
+            <view class="weui-panel__ft">
+                <view class="weui-cell weui-cell_access weui-cell_link" style="height:100rpx;">
+                    <view class="image">
+                      <image src="{{userInfo.avatarUrl}}"></image>
+                    </view>
+                    <view class="weui-cell__bd">{{userInfo.nickName}}</view>
+                </view>
+            </view>
+        </view>
+    </view>   
+
+    <mp-auth show="{{dialogShow}}" bindgetUserInfo="getUserInfo"></mp-auth>
+</view>

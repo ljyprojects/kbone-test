@@ -1,0 +1,7 @@
+/* pages/addFunction/addFunction.wxss */
+
+@import "../../style/weui.wxss";
+.picker{
+    padding: 13px;
+    background-color: #FFFFFF;
+}

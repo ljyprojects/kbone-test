@@ -1,0 +1,47 @@
+<view class="page">
+<view><image class="logoImg" mode="widthFix" src="cloud://ljyhr-0y7bz.6c6a-ljyhr-0y7bz-1301345086/b2.jpg"></image></view>
+    <view class="weui-msg">
+        <view class="weui-msg__text-area">
+            <view class="weui-msg__title">联系我们</view>
+            <view class="weui-msg__desc">您可以在线咨询、拨打电话、转发好友、添加微信。</view>
+        </view>
+        <view class="btnview">
+            <view class="btn">
+              <button open-type="contact" style="border: none;width:50rpx;background:none;padding-left: 0;line-height: 1;margin: 0;">
+                <image src='../../images/icon_message.png'></image>
+              </button>
+            </view>
+            <view class="btn">
+              <button open-type="share" type="default" style="border: none;width:50rpx;background:none;padding-left: 0;line-height: 1;margin: 0;">
+                <image src='../../images/icon_share.png'></image>
+              </button>
+            </view>
+            <view class="btn">
+              <button bindtap="getWechat" style="border: none;width:50rpx;background:none;padding-left: 0;line-height: 1;margin: 0;">
+                <image src='../../images/icon_wechat.png'></image>
+              </button>
+            </view>
+        </view>
+        <block wx:for="{{phoneList}}" wx:key="{{id}}">
+          <view class="callview" bindtap="getCall" data-phone="{{phoneList[index].phone}}">
+              <view class="calltitle">{{phoneList[index].contacter}}：{{phoneList[index].phone}}</view>
+              <view class="btn">
+                <button style="border: none;width:50rpx;background:none;padding-left: 0;line-height: 1;margin: 0;">
+                  <image src='../../images/icon_phone.png'></image>
+                </button>
+              </view>
+          </view>        
+        </block>
+        <view class="videoview">
+            <view class="vbtn">
+              <button bindtap="toVideo" style="border: none;width:150rpx;background:none;padding-left: 0;line-height: 1;margin: 0;">
+                <image class="vimg" src='../../images/video.png' style="width:150rpx;height:150rpx;"></image>
+              </button>
+            </view>
+        </view>
+            <view class="weui-msg__desc">疫情期间，与我们远程视频交流吧！</view>
+    </view>
+</view>
+    <mp-dialog title="温馨提示" show="{{dialogShow}}" bindbuttontap="getVideo" buttons="{{buttons}}">
+        <view>视频接通会有10秒钟的等待时间，若长时间没有接通，可能对方正在通话中，请您稍后再尝试。</view>
+    </mp-dialog>

@@ -1,0 +1,27 @@
+<view class="page">
+    <view class="page__bd">
+
+        <view class="weui-panel">
+            <view class="image">
+              <open-data type="userAvatarUrl"></open-data>
+            </view>
+        </view>
+        <view class="weui-panel weui-panel_access">
+            <view class="weui-panel__ft">
+                <view bindtap="toPing" class="weui-cell weui-cell_access weui-cell_link" style="height:100rpx;">
+                    <view class="weui-cell__bd">我的面试编号</view>
+                    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+                </view>
+            </view>
+        </view>
+        <view class="weui-panel weui-panel_access" wx:if="{{ifManage}}">
+            <view class="weui-panel__ft">
+                <navigator url="./list" class="weui-cell weui-cell_access weui-cell_link" style="height:100rpx;">
+                    <view class="weui-cell__bd">查看应聘列表</view>
+                    <view class="weui-cell__ft weui-cell__ft_in-access"></view>
+                </navigator>
+            </view>
+        </view>
+
+    </view>
+</view>          

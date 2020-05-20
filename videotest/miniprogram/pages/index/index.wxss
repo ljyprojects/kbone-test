@@ -1,0 +1,25 @@
+/**index.wxss**/
+
+page {
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.btn-group{
+  display: flex;
+  box-sizing: border-box;
+  padding: 10px;
+}
+.btn-group view{
+  flex: 1;
+  background-color: #fff;
+
+  box-sizing: border-box;
+  text-align: center;
+  margin: 10px;
+  padding: 4px 0;
+  font-weight: bold;
+  
+}
+

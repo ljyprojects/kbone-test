@@ -1,0 +1,77 @@
+<!--pages/nurse.wxml-->
+<view class="page">
+
+  <view class="head">
+    <view class="vHead">
+      <view class="avatar">
+        <image src="{{nurse.avatarUrl}}"></image>
+      </view>
+      <view class="vTitle">
+        <text class="name">{{nurse.name}}</text>
+        <text class="vtip">{{nurse.keshi}}  {{nurse.job}}</text>
+        <text class="vtip">{{nurse.company}}</text>
+      </view>
+    </view>
+    <view class="vDigtal">
+      <view class="digtalMenu">
+        <text>5756次</text>
+        <view class="vtip">服务人数</view>
+      </view>
+      <view class="digtalMenu">
+        <text>100%</text>
+        <text class="vtip">好评率</text>
+      </view>
+      <view class="digtalMenu">
+        <text>100分</text>
+        <text class="vtip">同行认可</text>
+      </view>
+    </view>
+  </view>
+  <view class="vBtn">
+  <block wx:for="{{btnSel}}">
+    <view class="btn {{btnSel[index].selected?'.isSelected':'noSelected'}}" bindtap="selectBtn" data-index="{{index}}">
+      <view class="btnTitle">{{btnSel[index].item}}</view>
+      <view class="btnIcon"><image src="/images/icon_message.png"></image></view>
+      <view class="btnPrice">¥{{btnSel[index].price}}/次</view>
+    </view>
+  </block>
+  </view>
+
+  <view class="tip">
+    <view class="tipTitle">
+      <text>{{btnSel[selIndex].tip}}</text>
+    </view>
+    <view class="tipContent">
+      <text>{{btnSel[selIndex].content}}</text>
+    </view>  
+  </view>
+
+  
+  <view class="menu">
+    <view class="tipTitle">医生擅长</view>
+    <view class="tipContent">{{nurse.like}}</view>  
+  </view>
+  
+  <view class="menu">
+    <view class="tipTitle">学术领域</view>
+    <view class="tipContent">{{nurse.study}}</view>  
+  </view>
+
+  <view class="blank"></view>
+</view>
+<!--page-->
+
+<!--底部菜单-->
+<view class="footer">
+  <view class="fbtn" bindtap="toHome">
+    <view class="btnIcon"><image src="/images/home.png"></image></view>
+    <view class="btnText">主页</view>
+  </view>
+  <view class="fbtn">
+    <view class="btnIcon"><image src="/images/like.png"></image></view>
+    <view class="btnText">关注</view>
+  </view>
+  <view class="subBtn" bindtap="toPay">
+    <view class="txtBtn">{{btnSel[selIndex].item}}（¥{{btnSel[selIndex].price}}/次）</view>
+  </view>
+</view>

@@ -1,0 +1,450 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2E91C7C921804F63006A25C0 /* screenshot.png in Resources */ = {isa = PBXBuildFile; fileRef = 2E91C7C821804F63006A25C0 /* screenshot.png */; };
+		2EFB7F0621800FB200C30814 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EFB7F0521800FB200C30814 /* AppDelegate.m */; };
+		2EFB7F0921800FB200C30814 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EFB7F0821800FB200C30814 /* ViewController.m */; };
+		2EFB7F0C21800FB200C30814 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EFB7F0A21800FB200C30814 /* Main.storyboard */; };
+		2EFB7F0E21800FB300C30814 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2EFB7F0D21800FB300C30814 /* Assets.xcassets */; };
+		2EFB7F1121800FB300C30814 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2EFB7F0F21800FB300C30814 /* LaunchScreen.storyboard */; };
+		2EFB7F1421800FB400C30814 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EFB7F1321800FB400C30814 /* main.m */; };
+		2EFB7F22218011C200C30814 /* EdwVideoSoundSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EFB7F21218011C200C30814 /* EdwVideoSoundSlider.m */; };
+		2EFB7F26218013BC00C30814 /* UIView+EdwFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EFB7F25218013BC00C30814 /* UIView+EdwFrame.m */; };
+		2EFB7F2A2180147800C30814 /* NSString+Extension.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EFB7F292180147800C30814 /* NSString+Extension.m */; };
+		2EFB7F2F2180168B00C30814 /* EdwPlayerProgressView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EFB7F2E2180168B00C30814 /* EdwPlayerProgressView.m */; };
+		2EFB7F32218018D300C30814 /* EdwVideoLanternView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EFB7F31218018D300C30814 /* EdwVideoLanternView.m */; };
+		2EFB7F352180196B00C30814 /* EdwVideoMusicView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2EFB7F342180196B00C30814 /* EdwVideoMusicView.m */; };
+		C5C8134D203A9545D7DD45E3 /* libPods-Imitate Animation Of DouYin.a in Frameworks */ = {isa = PBXBuildFile; fileRef = ECBFD67B6785C5EA683CDF42 /* libPods-Imitate Animation Of DouYin.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		2E91C7C821804F63006A25C0 /* screenshot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = screenshot.png; sourceTree = "<group>"; };
+		2EFB7F0121800FB100C30814 /* Imitate Animation Of DouYin.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Imitate Animation Of DouYin.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		2EFB7F0421800FB100C30814 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		2EFB7F0521800FB200C30814 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		2EFB7F0721800FB200C30814 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		2EFB7F0821800FB200C30814 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		2EFB7F0B21800FB200C30814 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		2EFB7F0D21800FB300C30814 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		2EFB7F1021800FB300C30814 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		2EFB7F1221800FB400C30814 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2EFB7F1321800FB400C30814 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		2EFB7F20218011C200C30814 /* EdwVideoSoundSlider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EdwVideoSoundSlider.h; sourceTree = "<group>"; };
+		2EFB7F21218011C200C30814 /* EdwVideoSoundSlider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EdwVideoSoundSlider.m; sourceTree = "<group>"; };
+		2EFB7F232180131300C30814 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		2EFB7F24218013BC00C30814 /* UIView+EdwFrame.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+EdwFrame.h"; sourceTree = "<group>"; };
+		2EFB7F25218013BC00C30814 /* UIView+EdwFrame.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+EdwFrame.m"; sourceTree = "<group>"; };
+		2EFB7F282180147800C30814 /* NSString+Extension.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSString+Extension.h"; sourceTree = "<group>"; };
+		2EFB7F292180147800C30814 /* NSString+Extension.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSString+Extension.m"; sourceTree = "<group>"; };
+		2EFB7F2D2180168B00C30814 /* EdwPlayerProgressView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EdwPlayerProgressView.h; sourceTree = "<group>"; };
+		2EFB7F2E2180168B00C30814 /* EdwPlayerProgressView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EdwPlayerProgressView.m; sourceTree = "<group>"; };
+		2EFB7F30218018D300C30814 /* EdwVideoLanternView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EdwVideoLanternView.h; sourceTree = "<group>"; };
+		2EFB7F31218018D300C30814 /* EdwVideoLanternView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EdwVideoLanternView.m; sourceTree = "<group>"; };
+		2EFB7F332180196B00C30814 /* EdwVideoMusicView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EdwVideoMusicView.h; sourceTree = "<group>"; };
+		2EFB7F342180196B00C30814 /* EdwVideoMusicView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EdwVideoMusicView.m; sourceTree = "<group>"; };
+		7A1F3DAB55D1467848E8A8A1 /* Pods-Imitate Animation Of DouYin.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Imitate Animation Of DouYin.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Imitate Animation Of DouYin/Pods-Imitate Animation Of DouYin.debug.xcconfig"; sourceTree = "<group>"; };
+		D019942E90E1B0E5D93E9536 /* Pods-Imitate Animation Of DouYin.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Imitate Animation Of DouYin.release.xcconfig"; path = "Pods/Target Support Files/Pods-Imitate Animation Of DouYin/Pods-Imitate Animation Of DouYin.release.xcconfig"; sourceTree = "<group>"; };
+		ECBFD67B6785C5EA683CDF42 /* libPods-Imitate Animation Of DouYin.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Imitate Animation Of DouYin.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2EFB7EFE21800FB100C30814 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C5C8134D203A9545D7DD45E3 /* libPods-Imitate Animation Of DouYin.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2EFB7EF821800FB100C30814 = {
+			isa = PBXGroup;
+			children = (
+				2EFB7F0321800FB100C30814 /* Imitate Animation Of DouYin */,
+				2EFB7F0221800FB100C30814 /* Products */,
+				5B834885471C4762D51AF104 /* Pods */,
+				BEAE6C3273F5758375042C58 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		2EFB7F0221800FB100C30814 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2EFB7F0121800FB100C30814 /* Imitate Animation Of DouYin.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		2EFB7F0321800FB100C30814 /* Imitate Animation Of DouYin */ = {
+			isa = PBXGroup;
+			children = (
+				2EFB7F2C2180165D00C30814 /* Music animation */,
+				2EFB7F272180144000C30814 /* Catogery */,
+				2EFB7F0421800FB100C30814 /* AppDelegate.h */,
+				2EFB7F0521800FB200C30814 /* AppDelegate.m */,
+				2EFB7F0A21800FB200C30814 /* Main.storyboard */,
+				2EFB7F0D21800FB300C30814 /* Assets.xcassets */,
+				2EFB7F0F21800FB300C30814 /* LaunchScreen.storyboard */,
+				2EFB7F1221800FB400C30814 /* Info.plist */,
+				2EFB7F232180131300C30814 /* PrefixHeader.pch */,
+				2EFB7F1321800FB400C30814 /* main.m */,
+				2E91C7C821804F63006A25C0 /* screenshot.png */,
+			);
+			path = "Imitate Animation Of DouYin";
+			sourceTree = "<group>";
+		};
+		2EFB7F272180144000C30814 /* Catogery */ = {
+			isa = PBXGroup;
+			children = (
+				2EFB7F24218013BC00C30814 /* UIView+EdwFrame.h */,
+				2EFB7F25218013BC00C30814 /* UIView+EdwFrame.m */,
+				2EFB7F282180147800C30814 /* NSString+Extension.h */,
+				2EFB7F292180147800C30814 /* NSString+Extension.m */,
+			);
+			path = Catogery;
+			sourceTree = "<group>";
+		};
+		2EFB7F2C2180165D00C30814 /* Music animation */ = {
+			isa = PBXGroup;
+			children = (
+				2EFB7F0721800FB200C30814 /* ViewController.h */,
+				2EFB7F0821800FB200C30814 /* ViewController.m */,
+				2EFB7F2D2180168B00C30814 /* EdwPlayerProgressView.h */,
+				2EFB7F2E2180168B00C30814 /* EdwPlayerProgressView.m */,
+				2EFB7F30218018D300C30814 /* EdwVideoLanternView.h */,
+				2EFB7F31218018D300C30814 /* EdwVideoLanternView.m */,
+				2EFB7F332180196B00C30814 /* EdwVideoMusicView.h */,
+				2EFB7F342180196B00C30814 /* EdwVideoMusicView.m */,
+				2EFB7F20218011C200C30814 /* EdwVideoSoundSlider.h */,
+				2EFB7F21218011C200C30814 /* EdwVideoSoundSlider.m */,
+			);
+			path = "Music animation";
+			sourceTree = "<group>";
+		};
+		5B834885471C4762D51AF104 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7A1F3DAB55D1467848E8A8A1 /* Pods-Imitate Animation Of DouYin.debug.xcconfig */,
+				D019942E90E1B0E5D93E9536 /* Pods-Imitate Animation Of DouYin.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		BEAE6C3273F5758375042C58 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ECBFD67B6785C5EA683CDF42 /* libPods-Imitate Animation Of DouYin.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		2EFB7F0021800FB100C30814 /* Imitate Animation Of DouYin */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2EFB7F1721800FB400C30814 /* Build configuration list for PBXNativeTarget "Imitate Animation Of DouYin" */;
+			buildPhases = (
+				E3030C057F9D66CC31E2A316 /* [CP] Check Pods Manifest.lock */,
+				2EFB7EFD21800FB100C30814 /* Sources */,
+				2EFB7EFE21800FB100C30814 /* Frameworks */,
+				2EFB7EFF21800FB100C30814 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Imitate Animation Of DouYin";
+			productName = "Imitate Animation Of DouYin";
+			productReference = 2EFB7F0121800FB100C30814 /* Imitate Animation Of DouYin.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		2EFB7EF921800FB100C30814 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1000;
+				ORGANIZATIONNAME = EdwardCheng;
+				TargetAttributes = {
+					2EFB7F0021800FB100C30814 = {
+						CreatedOnToolsVersion = 10.0;
+					};
+				};
+			};
+			buildConfigurationList = 2EFB7EFC21800FB100C30814 /* Build configuration list for PBXProject "Imitate Animation Of DouYin" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 2EFB7EF821800FB100C30814;
+			productRefGroup = 2EFB7F0221800FB100C30814 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				2EFB7F0021800FB100C30814 /* Imitate Animation Of DouYin */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		2EFB7EFF21800FB100C30814 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EFB7F1121800FB300C30814 /* LaunchScreen.storyboard in Resources */,
+				2EFB7F0E21800FB300C30814 /* Assets.xcassets in Resources */,
+				2EFB7F0C21800FB200C30814 /* Main.storyboard in Resources */,
+				2E91C7C921804F63006A25C0 /* screenshot.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		E3030C057F9D66CC31E2A316 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Imitate Animation Of DouYin-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		2EFB7EFD21800FB100C30814 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2EFB7F0921800FB200C30814 /* ViewController.m in Sources */,
+				2EFB7F1421800FB400C30814 /* main.m in Sources */,
+				2EFB7F0621800FB200C30814 /* AppDelegate.m in Sources */,
+				2EFB7F22218011C200C30814 /* EdwVideoSoundSlider.m in Sources */,
+				2EFB7F32218018D300C30814 /* EdwVideoLanternView.m in Sources */,
+				2EFB7F26218013BC00C30814 /* UIView+EdwFrame.m in Sources */,
+				2EFB7F352180196B00C30814 /* EdwVideoMusicView.m in Sources */,
+				2EFB7F2A2180147800C30814 /* NSString+Extension.m in Sources */,
+				2EFB7F2F2180168B00C30814 /* EdwPlayerProgressView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		2EFB7F0A21800FB200C30814 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2EFB7F0B21800FB200C30814 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		2EFB7F0F21800FB300C30814 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				2EFB7F1021800FB300C30814 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		2EFB7F1521800FB400C30814 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		2EFB7F1621800FB400C30814 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		2EFB7F1821800FB400C30814 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A1F3DAB55D1467848E8A8A1 /* Pods-Imitate Animation Of DouYin.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7L9JE458M7;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Imitate Animation Of DouYin/PrefixHeader.pch";
+				INFOPLIST_FILE = "Imitate Animation Of DouYin/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.folkyl.jwhwvideo.Imitate-Animation-Of-DouYin";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		2EFB7F1921800FB400C30814 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D019942E90E1B0E5D93E9536 /* Pods-Imitate Animation Of DouYin.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7L9JE458M7;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/Imitate Animation Of DouYin/PrefixHeader.pch";
+				INFOPLIST_FILE = "Imitate Animation Of DouYin/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.folkyl.jwhwvideo.Imitate-Animation-Of-DouYin";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2EFB7EFC21800FB100C30814 /* Build configuration list for PBXProject "Imitate Animation Of DouYin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EFB7F1521800FB400C30814 /* Debug */,
+				2EFB7F1621800FB400C30814 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2EFB7F1721800FB400C30814 /* Build configuration list for PBXNativeTarget "Imitate Animation Of DouYin" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2EFB7F1821800FB400C30814 /* Debug */,
+				2EFB7F1921800FB400C30814 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 2EFB7EF921800FB100C30814 /* Project object */;
+}

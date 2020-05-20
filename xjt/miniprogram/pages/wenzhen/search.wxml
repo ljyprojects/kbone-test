@@ -1,0 +1,21 @@
+<!--pages/index.wxml-->
+<view class="page">
+  <block wx:for="{{allNurses}}">
+	<navigator class="nurse" url="/pages/wenzhen/nurse?id={{item._id}}">
+		<view class="left"><image src="{{item.avatarUrl}}"></image></view>
+		<view class="right">
+		  <view class="nameView">
+			<view class="name">{{item.name}}</view>
+			<view class="keshi">{{item.keshi}}</view>
+			<view class="keshi">{{item.job}}</view>
+		  </view>
+		  <view class="company">{{item.company}}</view>
+		  <view class="like">{{item.like}}</view>
+		  <view class="priceView">
+			<view class="price">¥60/次</view>
+			<view class="buy">1708人已购买</view>
+		  </view>
+		</view>
+	</navigator>
+  </block>
+</view>

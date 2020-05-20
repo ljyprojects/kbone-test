@@ -1,0 +1,110 @@
+{
+  "pages": [
+    "pages/wenzhen/index",
+    "pages/wenzhen/search",
+    "pages/wenzhen/nurse",
+    "pages/wenzhen/my",
+    "pages/wenzhen/reg",
+    "pages/wenzhen/payConfirm",
+    "pages/wenzhen/askVideo",
+    "pages/wenzhen/askImage",
+    "pages/wenzhen/askChat",
+    "pages/wenzhen/answerVideo",
+    "pages/wenzhen/answerImage",
+    "pages/wenzhen/answerChat",
+    "pages/wenzhen/wen",
+    "pages/wenzhen/answer",
+    "pages/wenzhen/testPay",
+    "pages/zhaoping/index",
+    "pages/zhaoping/my",
+    "pages/zhaoping/ping",
+    "pages/zhaoping/getExcel",
+    "pages/zhaoping/list",
+    "pages/zhaoping/routePlan",
+    "pages/zhaoping/contact",
+    "pages/pyq/circle/index",
+    "pages/pyq/circle/detail",
+    "pages/pyq/edit/index",
+    "pages/code/web/index",
+    "pages/room/index",
+    "pages/room/room",
+    "pages/room/videocall",
+    "pages/my/my",
+    "pages/im/im",
+    "pages/code/article/index"
+  ],
+  "subpackages": [
+    {
+      "root": "pages/live/",
+      "pages": [
+        "pages/home/home"
+      ],
+      "plugins": {
+        "live-player-plugin": {
+          "version": "1.0.4",
+          "provider": "wx2b03c6e691cd7370"
+        }
+      }
+    }
+  ],
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序定位"
+    }
+  },
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "乐健园",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#ff0011",
+    "list": [
+      {
+        "pagePath": "pages/zhaoping/index",
+        "text": "首页",
+        "iconPath": "/images/icon/home.png",
+        "selectedIconPath": "/images/icon-red/home.png"
+      },
+      {
+        "pagePath": "pages/zhaoping/ping",
+        "text": "报名",
+        "iconPath": "/images/icon/cate.png",
+        "selectedIconPath": "/images/icon-red/cate.png"
+      },
+      {
+        "pagePath": "pages/zhaoping/contact",
+        "text": "联系",
+        "iconPath": "/images/icon/contact.png",
+        "selectedIconPath": "/images/icon-red/contact.png"
+      },
+      {
+        "pagePath": "pages/zhaoping/routePlan",
+        "text": "导航",
+        "iconPath": "/images/icon/route.png",
+        "selectedIconPath": "/images/icon-red/route.png"
+      },
+      {
+        "pagePath": "pages/zhaoping/my",
+        "text": "我的",
+        "iconPath": "/images/icon/people.png",
+        "selectedIconPath": "/images/icon-red/people.png"
+      }
+    ]
+  },
+  "plugins": {
+    "routePlan": {
+      "version": "1.0.5",
+      "provider": "wx50b5593e81dd937a"
+    },
+    "myPlugin": {
+      "version": "0.0.3",
+      "provider": "wx116d0dd5e6a39ac7"
+    }
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2"
+}

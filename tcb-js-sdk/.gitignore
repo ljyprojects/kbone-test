@@ -1,0 +1,7 @@
+node_modules
+tcbjs/statistics.html
+.vscode
+.DS_Store
+.history/
+tcbjs/e2e
+tsconfig.tsbuildinfo

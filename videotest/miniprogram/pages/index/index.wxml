@@ -1,0 +1,10 @@
+<!--index.wxml-->
+<view class="container">
+	<txv-video vid="e0354z3cqjp" danmuList="{{danmuList}}" enableDanmu="true" usePoster="true" danmuBtn='true' playerid="txv1" width="100vw">
+	</txv-video>
+
+</view>
+<view class="btn-group">
+	<view class="play" bindtap="play">播放</view>
+	<view class="pause" bindtap="pause">暂停</view>
+</view>

@@ -1,0 +1,17 @@
+/* pages/wen.wxss */
+
+.wenanswer{
+  background: #fff;
+  margin: 20rpx;
+  border-radius: 10rpx;
+  padding: 20rpx;
+  font-size: small;
+}
+
+.wen{
+}
+
+.answers{
+  border-top: solid gray 1rpx;
+  background: #fff;
+}

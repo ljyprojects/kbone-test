@@ -1,0 +1,43 @@
+<!--pages/tuwen.wxml-->
+
+<view>
+        <view class="weui-cells__title" style="color:#000;">基本信息</view>
+        <view class="weui-cells__tips">昵称：{{wen.user.nickName}}</view>
+        <view class="weui-cells__tips">性别：{{wen.sex}}</view>
+        <view class="weui-cells__tips">年龄：{{wen.age}}</view>
+        <view class="weui-cells__title" style="color:#000;">病情描述</view>
+        <view class="weui-cells__tips">{{wen.detail}}</view>
+        <view class="weui-cells__title" style="color:#000;">图片资料{{wen.img?'':'（无）'}}</view>
+        <view class="weui-cells weui-cells_after-title" wx:if="{{wen.img}}">
+            <view class="weui-cell">
+                <view class="weui-cell__bd">
+                    <view class="weui-uploader">
+                        <view class="weui-uploader__bd">
+                            <view class="weui-uploader__files" id="uploaderFiles">
+                                <block wx:for="{{wen.img}}" wx:key="*this">
+                                    <view class="weui-uploader__file" data-index="{{index}}" bindtap="previewImage" id="{{item}}">
+                                        <image class="weui-uploader__img" src="{{item}}" mode="aspectFill" />
+                                    </view>
+                                </block>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+  
+        <view class="weui-cells__title" style="color:#000;">我的答复</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell">
+                <view class="weui-cell__bd">
+                    <textarea class="weui-textarea"  bindinput="inputChange" data-type="answer" value="{{postData.answer}}" placeholder="详细描述你的答复。" placeholder-style="font-size:small;" style="font-size:small;height: 4em;" />
+                    <view class="weui-textarea-counter" style="font-size:small;">0/200</view>
+                </view>
+            </view>
+        </view>
+
+        <view class="weui-btn-area">
+            <button class="weui-btn" type="primary" bindtap="chkSub">提交</button>
+        </view>
+</view>
+<mp-auth show="{{dialogShow}}" bindgetUserInfo="getUserInfo"></mp-auth>

@@ -1,0 +1,37 @@
+<!--pages/index.wxml-->
+<view class="page">
+<!-- <web-view src='https://1924666540.github.io/projects/openEyes/index.html#/home/find'></web-view> -->
+  <image class="faceImg" mode="widthFix" src="cloud://ljyhr-0y7bz.6c6a-ljyhr-0y7bz-1301345086/utils/homenurse.jpg"></image>
+  <scroll-view scroll-x="true" class="scrView" enable-flex="true">
+    <block wx:for="{{recNurses}}">
+      <navigator class="nurseItem" url="/pages/wenzhen/nurse?id={{item._id}}">
+        <view class="nurseAvatar"><image src="{{item.avatarUrl}}"></image></view>
+        <view class="nurseName">{{item.name}}</view>
+        <view class="nurseTitle">{{item.job}}|{{item.keshi}}</view>
+        <view class="nurseTitle">{{item.company}}</view>
+        <view class="nursePrice">
+          <view class="nurseItemPrice">在线咨询¥80</view>
+          <view class="nurseHuiPrice">首单¥1</view>
+        </view>
+      </navigator>
+    </block>
+  </scroll-view>
+  <view class="findTitle">直播列表</view>
+  <view class="keshis">
+    <block wx:for="{{liveList}}">
+      <navigator class="live" url="plugin-private://wx2b03c6e691cd7370/pages/live-player-plugin?room_id={{item.roomid}}">
+        <view class="liveImg"><image mode="aspectFill" src="{{item.share_img}}"></image></view>
+        <view class="liveName">{{item.name}}</view>
+        <view class="liveTips">主讲：{{item.anchor_name}}</view>
+        <view class="liveTips">{{item.start_time}}</view>
+        <view></view>
+      </navigator>
+    </block>
+  </view>
+  <view class="findTitle">按症状查找</view>
+  <navigator class="keshis" url="./search">
+    <block wx:for="{{keshis}}">
+      <view class="keshi">{{keshis[index]}}</view>
+    </block>
+  </navigator>
+</view>

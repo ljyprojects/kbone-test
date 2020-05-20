@@ -1,0 +1,10 @@
+<view class="page">
+  <view><image mode="widthFix" src="cloud://ljyhr-0y7bz.6c6a-ljyhr-0y7bz-1301345086/b1.png"></image></view>
+
+  <view class="weui-msg__text-area" style="margin:30rpx;">
+    <view class="weui-msg__title">深圳市慧泰健康产业有限责任公司</view>
+    <view class="weui-msg__desc">地址：深圳市龙岗区龙城街道花样年龙年广场808</view>
+  </view>
+  <map id="map1" longitude="114.252289" latitude="22.713650" scale="14" markers="{{markers1}}" show-location style="width: 100%; height: 200px;"></map>
+  <button type="primary" bindtap="routePlan1">一键导航</button>
+</view>

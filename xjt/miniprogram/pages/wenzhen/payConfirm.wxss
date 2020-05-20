@@ -1,0 +1,30 @@
+/* pages/payConfirm.wxss */
+
+
+
+.vRow{
+  text-align: justify;
+  display:flex;
+}
+.vRow::after{
+  width: 100%;
+  display: inline-block;
+  content: '';
+}
+
+.vTitle {
+display:block;
+	white-space: pre-wrap;
+background:blue;
+}
+
+.vTip {
+background:yellow;
+width:max;
+}
+
+.btn {
+  position: fixed;
+  bottom:30rpx;
+  width: 100%;
+}

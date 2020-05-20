@@ -1,0 +1,22 @@
+<!--pages/wen.wxml-->
+<view class="page">
+  <block wx:for="{{wens}}">
+  <view class="wenanswer">
+    <view class="wen">
+      <view>咨   询   人：{{item.user.nickName}}</view>
+      <view>咨询时间：{{item.createTime}}</view>
+      <view>咨询方式：{{item.type}}</view>
+      <view>详细描述：{{item.detail}}</view>
+    </view>
+    <view class="answers" wx:if="{{item.answers}}">
+      <block wx:for="{{item.answers}}" wx:for-item="answer">
+        <view class="answers">
+          <view>回复时间：{{answer.answer.createTime}}</view>
+          <view>专家姓名：{{answer.answer.wen.nurse.name}}</view>
+          <view>回复内容：{{answer.answer.answer}}</view>
+        </view>
+      </block>
+    </view>
+  </view>
+  </block>
+</view>

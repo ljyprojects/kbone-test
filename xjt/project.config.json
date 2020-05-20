@@ -1,0 +1,259 @@
+{
+	"miniprogramRoot": "miniprogram/",
+	"cloudfunctionRoot": "cloudfunctions/",
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"enhance": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"coverView": true,
+		"nodeModules": true,
+		"autoAudits": false,
+		"showShadowRootInWxmlPanel": true,
+		"scopeDataCheck": false,
+		"checkInvalidKey": true,
+		"checkSiteMap": true,
+		"uploadWithSourceMap": true,
+		"babelSetting": {
+			"ignore": [],
+			"disablePlugins": [],
+			"outputPath": ""
+		}
+	},
+	"appid": "wx34f51e38036e8edf",
+	"projectname": "XJT",
+	"libVersion": "2.8.1",
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"list": []
+		},
+		"gamePlugin": {
+			"current": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": -1,
+			"list": [
+				{
+					"id": -1,
+					"name": "pages/zhaoping/ping",
+					"pathName": "pages/zhaoping/ping",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/zhaoping/getExcel",
+					"pathName": "pages/zhaoping/getExcel",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/zhaoping/list",
+					"pathName": "pages/zhaoping/list",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/zhaoping/msg_success",
+					"pathName": "pages/zhaoping/msg_success",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/zhaoping/jobAdd",
+					"pathName": "pages/zhaoping/jobAdd",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/zhaoping/my",
+					"pathName": "pages/zhaoping/my",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/zhaoping/routePlan",
+					"pathName": "pages/zhaoping/routePlan",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/zhaoping/contact",
+					"pathName": "pages/zhaoping/contact",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/vr/index",
+					"pathName": "pages/vr/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/pyq/circle/index",
+					"pathName": "pages/pyq/circle/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/room/index",
+					"pathName": "pages/room/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/room/videocall",
+					"pathName": "pages/room/videocall",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/pyq/edit/index",
+					"pathName": "pages/pyq/edit/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/wenzhen/reg",
+					"pathName": "pages/wenzhen/reg",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 14,
+					"name": "专家主页",
+					"pathName": "pages/wenzhen/nurse",
+					"query": "id=889dfecd5e78cb570020578a05cfbd09",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/wenzhen/testPay",
+					"pathName": "pages/wenzhen/testPay",
+					"query": "id=1583406014726_0.975210629471903_33614742-1583406039445_1_19578",
+					"scene": null
+				},
+				{
+					"id": 16,
+					"name": "pages/wenzhen/payConfirm",
+					"pathName": "pages/wenzhen/payConfirm",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/live/pages/home/home",
+					"pathName": "pages/live/pages/home/home",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 18,
+					"name": "pages/wenzhen/askVideo",
+					"pathName": "pages/wenzhen/askVideo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/wenzhen/tuwen",
+					"pathName": "pages/wenzhen/tuwen",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/wenzhen/wen",
+					"pathName": "pages/wenzhen/wen",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/room/index",
+					"pathName": "pages/room/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/room/room",
+					"pathName": "pages/room/room",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/room/videocall",
+					"pathName": "pages/room/videocall",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/im/im",
+					"pathName": "pages/im/im",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 25,
+					"name": "pages/wenzhen/answerImage",
+					"pathName": "pages/wenzhen/answerImage",
+					"query": "wid=1584157713251_0.3534299643064389_33602254-1584157712277_1_12567",
+					"scene": null
+				},
+				{
+					"id": 26,
+					"name": "首页",
+					"pathName": "pages/wenzhen/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/wenzhen/answer",
+					"pathName": "pages/wenzhen/answer",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/wenzhen/search",
+					"pathName": "pages/wenzhen/search",
+					"query": "",
+					"scene": null
+				}
+			]
+		}
+	}
+}

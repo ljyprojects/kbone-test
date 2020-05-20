@@ -1,0 +1,39 @@
+<!--pages/payConfirm.wxml-->
+    <view class="page__bd">
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell">
+                <view class="weui-cell__bd" style="color:#000;">{{nurse.name}}-{{btnSel.item}}</view>
+                <view class="weui-cell__ft" style="font-size:small;">¥{{btnSel.price}}元/次</view>
+            </view>
+            <view class="weui-cell">
+                <view class="weui-cell__bd" style="font-size:small;">单位</view>
+                <view class="weui-cell__ft" style="font-size:small;">{{nurse.company}}</view>
+            </view>
+            <view class="weui-cell">
+                <view class="weui-cell__bd" style="font-size:small;">职称</view>
+                <view class="weui-cell__ft" style="font-size:small;">{{nurse.job}}</view>
+            </view>
+            <view class="weui-cell">
+                <view class="weui-cell__bd" style="font-size:small;">对话回合</view>
+                <view class="weui-cell__ft" style="font-size:small;">{{btnSel.times}}次</view>
+            </view>
+            <view class="weui-cell">
+                <view class="weui-cell__bd" style="font-size:small;">对话时长</view>
+                <view class="weui-cell__ft" style="font-size:small;">{{btnSel.long}}小时</view>
+            </view>
+        </view>
+    </view>
+    <view class="page__bd">
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell">
+                <view class="weui-cell__bd">共需支付</view>
+                <view class="weui-cell__ft" style="font-size:small;">¥{{btnSel.price}}</view>
+            </view>
+        </view>
+    </view>
+<view class="btn">
+  <button type="primary" bindtap="toPay">去支付</button>
+</view>
+
+<!-- 授权框 -->
+<mp-auth show="{{dialogShow}}" bindgetUserInfo="getUserInfo"></mp-auth>

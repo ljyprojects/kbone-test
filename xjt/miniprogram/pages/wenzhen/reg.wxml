@@ -1,0 +1,108 @@
+<!--pages/reg.wxml-->
+  <image style="width:100%" mode="widthFix" src="cloud://ljyhr-0y7bz.6c6a-ljyhr-0y7bz-1301345086/specialist/宣讲团.png"></image>
+<view>
+  <button type="primary" wx:if="{{!userInfo}}" bindtap="openConfirm">我要注册</button>
+</view>
+<view wx:if="{{userInfo}}">
+  <view class="avatarImg">
+    <view class="title1"><text>头像</text></view>    
+    <image src="{{tmpAvatarUrl}}"></image>
+    <view class="title2" bindtap="chgAvatar"><text>上传头像</text></view>  
+  </view>
+  
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell ">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">姓名</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" bindinput="inputChange" data-type="name" value="{{postData.name}}" placeholder="请输入您的姓名"/>
+                </view>
+            </view>
+            <view class="weui-cell  weui-cell_vcode">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">手机</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" type="number" maxlength="11" bindinput="inputChange" data-type="phone" value="{{postData.phone}}" placeholder="请输入手机号" />
+                </view>
+                <view class="weui-cell__ft">
+                    <view class="weui-vcode-btn">获取验证码</view>
+                </view>
+            </view>
+            <view class="weui-cell ">
+                <view class="weui-cell__hd">
+                    <view class="weui-label">职称</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" bindinput="inputChange" data-type="job" value="{{postData.job}}" placeholder="请输入职称"/>
+                </view>
+            </view>
+        </view>
+        <view class="weui-cells__title">服务过单位</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell">
+                <view class="weui-cell__bd">
+                    <textarea class="weui-textarea" bindinput="inputChange" data-type="company" value="{{postData.company}}" placeholder="请输入您服务过的单位" style="height: 3.3em" />
+                    <view class="weui-textarea-counter">0/200</view>
+                </view>
+            </view>
+        </view>
+        <view class="weui-cells__title">擅长领域</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell">
+                <view class="weui-cell__bd">
+                    <textarea class="weui-textarea" bindinput="inputChange" data-type="like" value="{{postData.like}}" placeholder="请输入您的擅长领域" style="height: 3.3em" />
+                    <view class="weui-textarea-counter">0/200</view>
+                </view>
+            </view>
+        </view>
+        <view class="weui-cells__title">学术经历</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell">
+                <view class="weui-cell__bd">
+                    <textarea class="weui-textarea" bindinput="inputChange" data-type="study" value="{{postData.study}}" placeholder="请输入您的学术经历" style="height: 3.3em" />
+                    <view class="weui-textarea-counter">0/200</view>
+                </view>
+            </view>
+        </view>
+
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_select">
+                <view class="weui-cell__hd weui-cell__hd_in-select-after">
+                    <view class="weui-label">主治疾病</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <picker bindchange="bindJbChange" value="{{jbIndex}}" data-type="jibing" data-jibing="{{jibing[jbIndex]}}" range="{{jibing}}">
+                        <view class="weui-select weui-select_in-select-after">{{jibing[jbIndex]}}</view>
+                    </picker>
+                </view>
+            </view>            
+            <view class="weui-cell weui-cell_select">
+                <view class="weui-cell__hd weui-cell__hd_in-select-after">
+                    <view class="weui-label">主治科室</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <picker bindchange="bindKsChange" value="{{ksIndex}}" data-type="keshi" data-jibing="{{keshi[ksIndex]}}" range="{{keshi}}">
+                        <view class="weui-select weui-select_in-select-after">{{keshi[ksIndex]}}</view>
+                    </picker>
+                </view>
+            </view>
+        </view>
+
+        <checkbox-group bindchange="bindAgreeChange">
+            <label class="weui-agree" for="weuiAgree">
+                <view class="weui-agree__text">
+                    <checkbox class="weui-agree__checkbox" id="weuiAgree" value="agree" checked="{{isAgree}}" />
+                    <view class="weui-agree__checkbox-icon">
+                        <icon class="weui-agree__checkbox-icon-check" type="success_no_circle" size="9" wx:if="{{isAgree}}"></icon>
+                    </view>
+                    阅读并同意<navigator url="" class="weui-agree__link">《相关条款》</navigator>
+                </view>
+            </label>
+
+        </checkbox-group>        <view class="weui-btn-area">
+            <button class="weui-btn" type="primary" bindtap="subData">提交</button>
+        </view>
+</view>
+<mp-auth show="{{dialogShow}}" bindgetUserInfo="getUserInfo"></mp-auth>

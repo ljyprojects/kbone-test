@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "应聘列表",
+  "usingComponents": {
+    "mp-loading": "../../components/loading/loading"
+  }
+}

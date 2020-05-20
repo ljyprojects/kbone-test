@@ -1,0 +1,2 @@
+  <button type="primary" bindtap="videoCall" hover-class="none">视频客服</button>
+<my-player appid="1400311088" fileid="5285890799002158453" playerid="445345"></my-player>

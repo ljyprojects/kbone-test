@@ -1,0 +1,51 @@
+{
+  "name": "ohmybox",
+  "version": "0.1.6",
+  "author": "llqi <codedance98@gmail.com>",
+  "description": "A Scroll Component for Vue.js.",
+  "main": "lib/ohmybox.common.js",
+  "keywords": "vue tiktok scroll component box tool",
+  "private": false,
+  "license": "MIT",
+  "homepage": "https://github.com/llqi/oh-my-box",
+  "bugs": {
+    "url": "https://github.com/llqi/oh-my-box/issues"
+  },
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "lib": "vue-cli-service build --target lib --name ohmybox --dest lib packages/index.js",
+    "lint": "vue-cli-service lint"
+  },
+  "dependencies": {
+    "core-js": "^3.6.4",
+    "vue": "^2.6.11"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^4.2.0",
+    "@vue/cli-plugin-eslint": "^4.2.0",
+    "@vue/cli-service": "^4.2.0",
+    "babel-eslint": "^10.0.3",
+    "eslint": "^6.7.2",
+    "eslint-plugin-vue": "^6.1.2",
+    "vue-template-compiler": "^2.6.11"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "node": true
+    },
+    "extends": [
+      "plugin:vue/essential",
+      "eslint:recommended"
+    ],
+    "parserOptions": {
+      "parser": "babel-eslint"
+    },
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions"
+  ]
+}

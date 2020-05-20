@@ -1,0 +1,27 @@
+<view class="table">
+  <view class="tr bg-header">
+    <view class="thID">ID</view>
+    <view class="th1">姓名</view>
+    <view class="th2">应聘职位</view>
+    <view class="th3">学历</view>
+    <view class="th4">...</view>
+  </view>
+  <block wx:for="{{list}}" wx:key="id">
+    <view class="{{index%2==0?'tr bg-items':'tr'}}" bindtap="showDetail" data-index="{{index}}" data-isShow="{{item.isShow}}">
+      <view class="tdID">{{total-index}}</view>
+      <view class="td1">{{item.realname}}</view>
+      <view class="td2">{{item.jobname}}</view>
+      <view class="td3">{{item.education}}</view>
+      <view class="td4">{{!item.isShow?'>>':'<<'}}</view>
+    </view>
+    <view class="{{index%2==0?'trTips bg-items':'trTips'}}" data-index="{{index}}" data-isShow="{{item.isShow}}" wx:if="{{item.isShow}}"><text>{{item.sex?'【性别】:'+item.sex+'   ':''}}{{item.phone?'【电话】:'+item.phone+'  ':''}}{{item.email?'【邮箱】:'+item.email+'  ':''}}{{item.province?'【籍贯】:'+item.province+'  ':''}}{{item.address?'【现在住址】:'+item.address+'  ':''}}{{item.address?'【要求住宿】:'+item.house+'  ':''}}{{item.birthday?'【出生年月】:'+item.birthday+'  ':''}}{{item.walfare?'【期望待遇】:'+item.walfare+'  ':''}}{{item.jiontime?'【到岗时间】:'+item.jiontime+'  ':''}}{{item.certifite?'【技能证书】:'+item.certifite+'  ':''}}{{item.experion?'【工作经验】:'+item.experion+'  ':''}}{{item.subtime?'【提交时间】:'+item.subtime+'  ':''}}{{item.resume?'【简历上传】:是'+'  ':''}}{{item.resumeno?'【面试码】:'+item.resumeno+'  ':''}}</text></view>
+  </block>
+</view>
+<view class="viewbtn"><button type="primary" bindtap="toNav">下载EXCEL</button></view>
+
+    <view class="page__bd">
+        <mp-loading type="circle" show="{{loading}}"></mp-loading>
+        <view class="weui-loadmore weui-loadmore_line" wx:if="{{!loading}}">
+            <view class="weui-loadmore__tips weui-loadmore__tips_in-line">暂无数据</view>
+        </view>
+    </view>

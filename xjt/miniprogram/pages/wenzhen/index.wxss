@@ -1,0 +1,119 @@
+/* pages/index.wxss */
+.page{
+  background: #f1f1f1;
+}
+
+.faceImg{
+  width: 100%;
+}
+
+.scrView{
+  white-space: nowrap;
+  background: #fff;
+  padding-bottom: 30rpx;
+  border-bottom-right-radius: 20rpx;
+  border-bottom-left-radius: 20rpx;
+}
+
+.nurseItem{
+  width: 340rpx;
+  display: inline-block;
+  justify-content: center;
+  align-items: center;
+  justify-items: center;
+  background: #f1f1f1;
+  height: 350rpx;
+  margin: 20rpx;
+  border-radius: 15rpx;
+}
+
+.nurseAvatar{
+  display: flex;
+  justify-content: center;
+  margin: 10rpx;
+}
+
+.nurseAvatar image{
+  margin-top: 20rpx;
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+
+.nurseName{
+  display: flex;
+  justify-content: center;
+}
+
+.nurseTitle{
+  display: flex;
+  justify-content: center;
+  color: rgb(163, 163, 163);
+  font-size: small;
+}
+
+.nursePrice{
+  display: flex;
+  justify-content: center;
+}
+
+.nurseItemPrice{
+  display: flex;
+  justify-content: center;
+  font-size: small;
+}
+
+.nurseHuiPrice{
+  display: flex;
+  justify-content: center;
+  color: orange;
+  background: #f6f7b6;
+  margin-left: 20rpx;
+  border-radius: 5rpx;
+  padding: 0 15rpx 0 15rpx;
+  font-size: x-small;
+}
+
+.findTitle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120rpx;
+  background: #fff;
+  border-top-right-radius: 20rpx;
+  border-top-left-radius: 20rpx;
+  margin: 15rpx 0 2rpx 0;
+}
+
+.keshis{
+  display: flex;
+  flex-wrap: wrap;
+  background: #fff;
+}
+
+.keshi{
+  background: #f1f1f1;
+  margin: 20rpx;
+  width: 210rpx;
+  height: 80rpx;
+  border-radius: 5rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: small;
+}
+
+.liveImg image{
+  width:330rpx;
+  height: 330rpx;
+  border-radius: 20rpx;
+}
+
+.live{
+  margin: 20rpx;
+}
+
+.liveTips{
+  color: #999;
+  font-size: small;
+}

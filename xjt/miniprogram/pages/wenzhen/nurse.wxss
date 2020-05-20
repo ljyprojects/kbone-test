@@ -1,0 +1,149 @@
+/* pages/nurse.wxss */
+
+.head {
+	background:rgb(83, 216, 83);
+	color:white;
+	padding-top:1rpx;
+	padding-bottom:30rpx;
+}
+
+.head .vHead {
+	margin:50rpx 50rpx 20rpx 50rpx;
+	display:flex;
+}
+
+.avatar {
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+}
+
+.avatar image{
+	width:150rpx;
+	height:150rpx;
+	border-radius:50%;
+}
+
+.vTitle {
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:left;
+	margin-left:40rpx;
+}
+
+.vTitle .name {
+	font-weight:bold;
+}
+
+.vDigtal {
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+}
+
+.digtalMenu {
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+	margin:0 60rpx 0 60rpx;
+}
+
+.vtip{
+	font-size:small;
+}
+
+.vBtn{
+	display:flex;
+	flex-direction:row;
+	justify-content:left;
+	align-items:center;
+	border-bottom:solid 1rpx #c3c3c3;
+	font-size:small;
+}
+
+.vBtn .btn{
+	margin:20rpx 0 20rpx 20rpx;	
+	width:130rpx;
+	border-radius:10rpx;
+	padding:20rpx;
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;
+}
+
+.isSelected {
+	background:rgb(226, 250, 226);
+}
+
+.noSelected {
+	background:rgb(240, 237, 237);
+}
+ 
+ .btnIcon image{
+	width:60rpx;
+	height:60rpx;
+ }
+ 
+ .tip, .menu{
+	border-bottom:solid 1rpx #c3c3c3;
+ }
+ 
+ .tipTitle {
+	padding:20rpx;
+	font-size:small;
+	color:#666;
+ }
+ 
+.tipContent {
+	padding:20rpx;
+	font-size:small;
+	color:#999;
+ }
+ 
+ .blank {
+	margin-bottom:120rpx;
+ }
+ 
+ .footer {
+	position:fixed;
+	bottom:0;
+	background:#fff;
+	width:100%;
+	display:flex;
+	flex-direction:row;
+	justify-content:left;
+	align-items:center;	
+	height:120rpx;
+ }
+ 
+ .fbtn {
+	display:flex;
+	flex-direction:column;
+	justify-content:center;
+	align-items:center;	
+	width:150rpx;
+	height:100%;
+ }
+
+  .btnIcon image{
+    width: 50rpx;
+    height: 50rpx;
+  }
+
+ .btnText {
+   font-size: small;
+ }
+  
+ .subBtn {
+	width:450rpx;
+	height:100%;
+	color:#fff;
+	display:flex;
+	flex-direction:row;
+	justify-content:center;
+	align-items:center;
+	background:rgb(83, 216, 83);
+ }

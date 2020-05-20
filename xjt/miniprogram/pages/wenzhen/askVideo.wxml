@@ -1,0 +1,16 @@
+<!--pages/realVideo.wxml-->
+<view class="head">
+  <view class="avatar">
+    <image src="cloud://ljyhr-0y7bz.6c6a-ljyhr-0y7bz-1301345086/specialist/熊爱军/4851583583070.jpg"></image>
+  </view>
+  <view>王立群</view>
+</view>
+
+<view class="video" bindtap="toVideo">
+  <image src="/images/video.png"></image>
+  <view>在线视频问诊</view>
+</view>
+
+    <mp-dialog title="温馨提示" show="{{dialogShow}}" bindbuttontap="getVideo" buttons="{{buttons}}">
+        <view>视频接通会有10秒钟的等待时间，若长时间没有接通，可能对方正在通话中，请您稍后再尝试。</view>
+    </mp-dialog>

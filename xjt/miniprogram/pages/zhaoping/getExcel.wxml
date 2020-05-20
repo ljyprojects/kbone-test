@@ -1,0 +1,3 @@
+<view>{{fileUrl}}</view>
+<button type="default" bindtap="copyFileUrl">复制excel下载链接</button>
+<button type="primary" bindtap="toOpen">打开EXCEL</button>

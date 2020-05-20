@@ -1,0 +1,8 @@
+
+@import '../../style/common.wxss';
+.image {
+  width: 100rpx;
+  height: 100rpx;
+  padding: 20rpx;
+  border-radius: 10rpx;
+}

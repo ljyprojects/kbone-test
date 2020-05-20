@@ -1,0 +1,58 @@
+page{
+    background-color: #FFFFFF;
+}
+page,.page{height:100%;}
+.btnview {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 30rpx;
+}
+.videoview {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 30rpx;
+}
+.callview {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.calltitle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: #999999;
+}
+.btn {
+  width: 150rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.vbtn {
+  width: 150rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.avatar {
+  width: 200rpx;
+  height: 200rpx;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-bottom: 30rpx;
+}
+button image{
+  width: 50rpx;
+  height: 50rpx;
+}
+vimg{
+  width: 150rpx;
+  height: 150rpx;
+}
+.logoImg {
+  width:100%;
+}

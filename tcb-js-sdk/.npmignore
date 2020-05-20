@@ -1,0 +1,12 @@
+.vscode
+.github
+node_modules
+src
+test
+test_web
+index.html  
+tcbjs
+jest.config.js
+webpack.test.js
+tsconfig.json
+tsconfig.tsbuildinfo

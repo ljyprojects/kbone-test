@@ -1,0 +1,194 @@
+
+<!-----表单页面-------->
+<view wx:if="{{!ifSubmit}}">
+<view><image mode="widthFix" src="cloud://ljyhr-0y7bz.6c6a-ljyhr-0y7bz-1301345086/b1.png"></image></view>
+<view class="weui-cells__tips">应聘简历</view>
+<view class="weui-cells__tips">您好！感谢您选择慧泰健康，请完善以下简历信息，期待您的加入。</view>
+<view class="weui-cells__tips">带 * 号的信息为必填项</view>
+
+        <view class="weui-cells__title">*姓名</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell ">
+                <view class="weui-cell__bd">
+                    <input class="weui-input" placeholder="" value="" bindinput="onChange" data-type="realname"/>
+                </view>
+            </view>
+        </view>
+
+        <view class="weui-cells__title">*性别</view>
+        <view class="weui-cells weui-cells_after-title">
+            <radio-group bindchange="radioChange" data-type="sex">
+                <label class="weui-cell weui-check__label" style="height:90rpx" wx:for="{{radioItems}}" wx:key="value">
+                    <radio class="weui-check" value="{{item.name}}" checked="{{item.checked}}"/>
+                    <view class="weui-cell__bd">{{item.name}}</view>
+                    <view class="weui-cell__ft weui-cell__ft_in-radio" wx:if="{{item.checked}}">
+                        <icon class="weui-icon-radio" type="success_no_circle" size="16"></icon>
+                    </view>
+                </label>
+            </radio-group>
+        </view>
+        
+        <view class="weui-cells__title">*应聘职位</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_select">
+                <view class="weui-cell__bd">
+                    <picker bindchange="bindJobnameChange" value="{{jobIndex}}" data-type="jobname" data-jobname="{{jobs [jobIndex]}}" range="{{jobs}}">
+                        <view class="weui-select">{{jobs[jobIndex]}}</view>
+                    </picker>
+                </view>
+            </view>
+        </view>
+
+        <view class="weui-cells__title">
+          <view class="phoneView">*联系电话<view class="inbtn"><button open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber" style="border: 0;width:200rpx;background:none;padding: 8rpx;line-height: 1;margin: 0,0,0,180rpx;font-size:10pt;color:#999;">[一键获取]</button></view></view>
+        </view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell ">
+                <view class="weui-cell__bd">
+                    <input class="weui-input" type="number" value="{{postData.phone}}"  maxlength="11"  bindinput="onChange" data-type="phone"/>
+                </view>
+            </view>
+        </view>
+
+        <view class="weui-cells__title">邮箱</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell ">
+                <view class="weui-cell__bd">
+                    <input class="weui-input"  value="" bindinput="onChange" data-type="email"/>
+                </view>
+            </view>
+        </view>
+
+        <view class="weui-cells__title">*籍贯</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell ">
+                <view class="weui-cell__bd">
+                  <picker mode="region" bindchange="bindRegionChange" value="{{region}}">
+                    <view class="picker">
+                      {{region[0]}}，{{region[1]}}，{{region[2]}}
+                    </view>
+                  </picker>
+                </view>
+            </view>
+        </view>
+
+        <view class="weui-cells__title">*现在住址</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell ">
+                <view class="weui-cell__bd">
+                  <picker mode="region" bindchange="bindAddressChange" value="{{address}}">
+                    <view class="picker">
+                      {{address[0]}}，{{address[1]}}，{{address[2]}}
+                    </view>
+                  </picker>
+                </view>
+            </view>
+        </view>
+
+        <view class="weui-cells__title">*出生年月</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell ">
+                <view class="weui-cell__bd">
+                  <picker mode="date" value="{{date}}" start="1970-01-01" end="2003-01-01" bindchange="bindDateChange">
+                    <view class="picker">
+                      {{date}}
+                    </view>
+                  </picker>
+                </view>
+            </view>
+        </view>
+
+        <view class="weui-cells__title">期望待遇</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell ">
+                <view class="weui-cell__bd">
+                    <input class="weui-input" type="number"  value="" placeholder=""  bindinput="onChange" data-type="walfare"/>
+                </view>
+            </view>
+        </view>
+
+        <view class="weui-cells__title">*最高学历</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_select">
+                <view class="weui-cell__bd">
+                    <picker bindchange="bindEducationChange" value="{{educationIndex}}" data-type="education" data-jobname="{{education[educationIndex]}}" range="{{education}}">
+                        <view class="weui-select">{{education[educationIndex]}}</view>
+                    </picker>
+                </view>
+            </view>
+        </view>
+
+        <view class="weui-cells__title">*到岗时间</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_select">
+                <view class="weui-cell__bd">
+                    <picker bindchange="bindJoinChange" value="{{worktimeIndex}}" data-type="jiontime" data-jobname="{{worktime[worktimeIndex]}}" range="{{worktime}}">
+                        <view class="weui-select">{{worktime[worktimeIndex]}}</view>
+                    </picker>
+                </view>
+            </view>
+        </view>
+
+        <view class="weui-cells__title">*是否需要提供住宿</view>
+        <view class="weui-cells weui-cells_after-title">
+            <radio-group bindchange="houseChange" data-type="house">
+                <label class="weui-cell weui-check__label" style="height:90rpx" wx:for="{{houseItems}}" wx:key="value">
+                    <radio class="weui-check" value="{{item.name}}" checked="{{item.checked}}"/>
+                    <view class="weui-cell__bd">{{item.name}}</view>
+                    <view class="weui-cell__ft weui-cell__ft_in-radio" wx:if="{{item.checked}}">
+                        <icon class="weui-icon-radio" type="success_no_circle" size="16"></icon>
+                    </view>
+                </label>
+            </radio-group>
+        </view>
+
+        <view class="weui-cells__title">技能证书</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell">
+                <view class="weui-cell__bd">
+                    <textarea class="weui-textarea"  bindinput="onChange" data-type="certifite" placeholder="" style="height: 3.3em" />
+                    <view class="weui-textarea-counter">0/200</view>
+                </view>
+            </view>
+        </view>
+
+
+        <view class="weui-cells__title">工作／实习经验（起止时间，工作单位，职位，具体工作内容）</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell">
+                <view class="weui-cell__bd">
+                    <textarea class="weui-textarea"  value="" bindinput="onChange" data-type="experion" placeholder="" style="height: 3.3em" />
+                    <view class="weui-textarea-counter">0/200</view>
+                </view>
+            </view>
+        </view>
+
+        <view class="weui-cells__tips">请尽量完善工作经验信息或上传详细简历，可提高简历筛选通过概率</view>
+        <view class="weui-cells__tips">将在微信聊天对话中选取您的简历文件</view>
+        <view class="weui-cells__tips" style="color:red" wx:if="{{ifUpload}}">简历上传成功！</view>
+        <view class="">
+            <button class="weui-btn" type="default"  bindtap="chooseFile" wx:if="{{!ifUpload}}">上传简历</button>
+        </view>
+
+        <view class="weui-btn-area">
+            <button class="weui-btn" type="{{btnDisabled?'default':'primary'}}" disabled="{{btnDisabled}}" loading="{{btnLoading}}" bindtap="submit">提交</button>
+        </view>
+</view>
+
+<!-----面试码页面-------->
+<view class="page" wx:if="{{ifSubmit}}">
+    <view class="weui-msg">
+        <view class="weui-msg__icon-area">
+            <icon type="success" size="64"></icon>
+        </view>
+        <view class="btnview">
+          <view class="avatar">
+            <open-data type="userAvatarUrl"></open-data>
+          </view>
+        </view>
+        <view class="weui-msg__text-area">
+            <view class="weui-msg__title">面试码：{{resumeno}}</view>
+            <view class="weui-msg__desc">您已报名成功，感谢您的参与！</view>
+        </view>
+    </view>
+</view>

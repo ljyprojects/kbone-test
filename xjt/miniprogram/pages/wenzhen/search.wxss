@@ -1,0 +1,66 @@
+/* pages/index.wxss */
+.nurse{
+  display: flex;
+  flex-direction: row;
+  background: #fff;
+  justify-content: top;
+  padding-top: 40rpx;
+  border-bottom: solid 1rpx rgb(212, 212, 212);
+}
+
+.left{
+  margin-left: 30rpx;
+}
+
+.left image{
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+}
+
+.right{
+  margin-left: 30rpx;
+  padding-right: 20rpx;
+}
+
+.nameView{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.name{
+  font-weight: bold;
+}
+
+.keshi{
+  color:#999;
+  font-size: small;
+  margin-left: 10rpx;
+  font-weight: bold;
+}
+
+.company{
+  color: rgb(126, 126, 126);
+  font-size: small;
+}
+
+.like{
+  color: rgb(167, 167, 167);
+  font-size: small;
+}
+
+.priceView{
+  display: flex;
+  font-size:small;
+  margin-top: 30rpx;
+  margin-bottom: 20rpx;
+}
+
+.price{
+  color:red;
+}
+
+.buy{
+  margin-left: 20rpx;
+}

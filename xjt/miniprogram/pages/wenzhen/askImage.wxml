@@ -1,0 +1,72 @@
+<!--pages/tuwen.wxml-->
+
+<view>
+
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell weui-cell_select">
+                <view class="weui-cell__hd">
+                    <view class="weui-label" style="font-size:small;">性别</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <picker bindchange="bindSexChange" value="{{sexIndex}}" data-type="sex" data-jibing="{{sex[sexIndex]}}" range="{{sex}}">
+                        <view class="weui-select weui-select_in-select-after" style="font-size:small;">{{sex[sexIndex]}}</view>
+                    </picker>
+                </view>
+            </view>
+            <view class="weui-cell ">
+                <view class="weui-cell__hd">
+                    <view class="weui-label" style="font-size:small;">年龄</view>
+                </view>
+                <view class="weui-cell__bd">
+                    <input class="weui-input" bindinput="inputChange" data-type="age" value="{{postData.age}}" style="font-size:small;" type="number" maxlength="2" placeholder="请输入年龄"/>
+                </view>
+            </view>
+        </view>
+  
+        <view class="weui-cells__title" style="color:#000;">病情描述</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell">
+                <view class="weui-cell__bd">
+                    <textarea class="weui-textarea"  bindinput="inputChange" data-type="detail" value="{{postData.detail}}" placeholder="详细描述你的病情症状，曾经做过的检查、治疗情况，以及想获得医生的帮助。" placeholder-style="font-size:small;" style="font-size:small;height: 4em;" />
+                    <view class="weui-textarea-counter" style="font-size:small;">0/200</view>
+                </view>
+            </view>
+        </view>
+
+        <view class="weui-cells__title" style="color:#000;">图片资料（非必填）</view>
+        <view class="weui-cells__tips">上传能体现病情的患处图片、检验检查资料等</view>
+        <view class="weui-cells weui-cells_after-title">
+            <view class="weui-cell">
+                <view class="weui-cell__bd">
+                    <view class="weui-uploader">
+                        <view class="weui-uploader__hd">
+                          <view class="weui-uploader__overview">
+                              <view class="weui-uploader__title" style="font-size:small;">图片上传</view>
+                              <view class="weui-uploader__info" style="font-size:small;">{{files.length}}/9</view>
+                          </view>
+                          <view class="weui-uploader__tips" wx:if="{{files.length!=0}}">
+                            长按删除
+                          </view>
+                        </view>
+                        <view class="weui-uploader__bd">
+                            <view class="weui-uploader__files" id="uploaderFiles">
+                                <block wx:for="{{files}}" wx:key="*this">
+                                    <view class="weui-uploader__file" data-index="{{index}}" bindtap="previewImage" bindlongtap="deleteImg" id="{{item}}">
+                                        <image class="weui-uploader__img" src="{{item}}" mode="aspectFill" />
+                                    </view>
+                                </block>
+                            </view>
+                            <view class="weui-uploader__input-box">
+                                <view class="weui-uploader__input" bindtap="chooseImage"></view>
+                            </view>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </view>
+
+        <view class="weui-btn-area">
+            <button class="weui-btn" type="primary" bindtap="chkSub">提交</button>
+        </view>
+</view>
+<mp-auth show="{{dialogShow}}" bindgetUserInfo="getUserInfo"></mp-auth>

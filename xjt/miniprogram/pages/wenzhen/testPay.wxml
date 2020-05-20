@@ -1,0 +1,6 @@
+<!--pages/testPay.wxml-->
+<form bindsubmit="formSubmit" bindreset="formReset">
+  <input name="orderid" placeholder="订单号"></input>
+  <input name="money" placeholder="金额"></input>
+  <button form-type="submit" type="primary">提交订单</button>
+</form>
