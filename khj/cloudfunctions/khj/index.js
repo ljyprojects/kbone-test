@@ -4,8 +4,8 @@ const app = require('tcb-admin-node');
 
 cloud.init()
 app.init({
-  secretId: 'AKIDkHYghS4m5c4PKfN76Q4asvZ32pPyDRRn',
-  secretKey: 'Qdquud54bXCajGafT5ZvDZkz05uVsEJX',
+  secretId: '',
+  secretKey: '',
   env: 'cqj-04kwq'
 });
 
