@@ -3,7 +3,7 @@ import Router from 'vue-router'
 import { sync } from 'vuex-router-sync'
 import App from '../../App.vue'
 import store from '../../store'
-import Todo from '../../todo/index.vue'
+import Demo from '../../views/demo/index.vue'
 
 Vue.use(Router)
 
@@ -11,8 +11,8 @@ const router = new Router({
   mode: 'history',
   routes: [{
     path: '/',
-    name: 'Todo',
-    component: Todo,
+    name: 'Home',
+    component: Demo,
   }],
 })
 

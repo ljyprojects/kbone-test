@@ -17,6 +17,7 @@
     "build:mp": "cross-env NODE_ENV=production webpack --config build/webpack.mp.config.js --progress --hide-modules"
   },
   "dependencies": {
+    "kbone-ui": "^0.6.5",
     "tcb-js-sdk": "^1.6.1",
     "vue": "^2.5.2",
     "vue-router": "^3.0.1",
